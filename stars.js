@@ -84,7 +84,7 @@ initializeParticles = () => {
 
 var timer = 0;
 var opacity = 1;
-var speed = 0.0003;
+var speed = 0.0005;
 
 animate = () => {
 	window.requestAnimationFrame(animate);
@@ -110,7 +110,7 @@ animate = () => {
 		c.fillStyle = "rgba(18, 18, 18, " + opacity + ")";
 
 		// Ease back to the original speed
-		var originalSpeed = 0.0003;
+		var originalSpeed = 0.0005;
 		speed += (originalSpeed - speed) * 0.005;
 		timer += speed;
 
